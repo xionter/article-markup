@@ -19,6 +19,14 @@ h1, h2 {
     color: rgba(0,0,0,0.84);
     line-height: 44px;
 }
+#logo {
+    position: absolute;
+    top: 10px;
+    z-index: 5;
+    left: 20px;
+    width: 101px;
+    height: 64px;
+}
 
 p {
     position: absolute;
@@ -56,14 +64,15 @@ h1 {
 
 #p2 {
     top: 583px;
+    z-index: 3;
 }
 
 #p3 {
-    top: 919px;
+    top: 970px;
 }
 
 #img_1 {
-    top: 1094px;
+    top: 1090px;
 }
 
 #p4 {
@@ -71,17 +80,65 @@ h1 {
 }
 
 #img_2 {
-    top: 2168px;
+    top: 2090px;
 }
 
 #p5 {
-    top: 3128px;
+    top: 2900px;
+}
+.spec {
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+
+    border-radius: 4px;
+    padding: 2px 6px;
 }
 
 @media (max-width: 800px) {
+
+    body {
+        position: static;
+    }
+
     h1, h2, p, img {
         position: static;
         width: auto;
-        margin: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .spec {
+        font-size: 0.85em;
+        padding: 2px 4px;
     }
 }
