@@ -1,5 +1,8 @@
-/* Тут пиши основные стили */
-body,h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {margin:0;padding:0;}
+body,h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+    margin:0;
+    padding:0;
+}
+
 body {
     position: relative;
 }
@@ -16,10 +19,11 @@ h1, h2 {
     color: rgba(0,0,0,0.84);
     line-height: 44px;
 }
+
 p {
     position: absolute;
-    width: 700px;
     left: 360px;
+    width: 700px;
 
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
     font-size: 21px;
@@ -28,49 +32,56 @@ p {
     line-height: 33px;
 }
 
+img {
+    position: absolute;
+    left: 360px;
+    width: 700px;
+}
+
 h1 {
     top: 55px;
-    height: 88px;
 }
 
 #h2_1 {
     top: 534px;
-    height: 39px;
 }
 
 #h2_2 {
     top: 870px;
-    height: 39px;
 }
 
 #p1 {
     top: 153px;
-    height: 326px;
 }
 
 #p2 {
     top: 583px;
-    height: 231px;
 }
 
 #p3 {
     top: 919px;
-    height: 132px;
+}
+
+#img_1 {
+    top: 1094px;
 }
 
 #p4 {
     top: 1858px;
-    height: 267px;
+}
+
+#img_2 {
+    top: 2168px;
 }
 
 #p5 {
     top: 3128px;
-    height: 165px;
 }
 
-
 @media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
-    Стили применятся только когда страничка будет ≤800px шириной
- */
+    h1, h2, p, img {
+        position: static;
+        width: auto;
+        margin: 20px;
+    }
 }
