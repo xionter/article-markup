@@ -1,6 +1,33 @@
 /* Тут пиши основные стили */
 
 
+
+h1 {
+    width: 700px;
+    height: 88px;
+    margin-left: 360px;
+    margin-top: 55px;
+    font-family: "lucida grande", arial, sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    color: rgba(0,0,0,0.84);
+    text-align: left;
+    line-height: 44px;
+}
+
+p > .1 {
+    width: 700px;
+    height: 88px;
+    margin-left: 360px;
+    margin-top: 55px;
+    font-family: "lucida grande", arial, sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    color: rgba(0,0,0,0.84);
+    text-align: left;
+    line-height: 44px;
+}
+
 @media (max-width: 800px) {
 /* Тут пиши стили для мобилки.
     Стили применятся только когда страничка будет ≤800px шириной
